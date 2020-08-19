@@ -10,10 +10,12 @@ var tom, slingshot;
 
 var gameState = "onSling";
 var bg = "bg.png";
+var bg3;
 var score = 0;
 
 function preload() {
    getBackgroundImg();
+   bg3 = loadImage("bg.png");
 }
 
 function setup(){
@@ -48,7 +50,7 @@ function setup(){
 
 function draw(){
     if(backgroundImg)
-         background(backgroundImg); 
+         background(bg3); 
 
          noStroke();
          textSize(35)
